@@ -1,0 +1,21 @@
+﻿@model Codeflyers.EC.Domain.Entities.Product
+
+<div class="item">
+
+    @if (Model.ImageData != null) {
+        <div style="float:left;margin-right:20px">
+            <img width="75" height="75" src="@Url.Action("GetImage", "Book",
+                new { Model.ProductId })" />
+        </div>
+    }
+
+    <h3>@Model.Title</h3>
+    @Model.Description
+
+    @using(Html.BeginForm("AddToCart", "Cart")) {
+        @Html.HiddenFor(x => x.ProductId)
+        <input type="submit" value="+ Add to cart" />
+    }
+
+    <h4>@Model.Price.ToString("c")</h4>
+</div>

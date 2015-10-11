@@ -1,0 +1,17 @@
+﻿@model Codeflyers.EC.MVC.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Admin: Login";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Log In</h1>
+<p>Please log in to access the administrative area:</p>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.EditorForModel()
+    <p>
+        <input type="submit" value="Log in" />
+    </p>
+}

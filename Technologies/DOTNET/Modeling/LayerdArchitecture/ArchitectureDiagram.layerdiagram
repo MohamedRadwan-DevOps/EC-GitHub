@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ed2301b-f138-4a8d-9583-43ce1f32f22e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="7498adc8-3d23-43a8-83df-f5ee5634d23e" name="Presentation Layer">
+      <childLayers>
+        <layer Id="d39ede5a-87ab-4c81-a0c1-0185c7b86f8b" name="Web">
+          <childLayers>
+            <layer Id="cf29c53d-472f-4a03-a454-72e1203dab66" name="&#xD;&#xA;&#xD;&#xA;MVC" />
+            <layer Id="7dbbc9d3-efd8-4339-8d43-1b376da5cf98" name="MVC.UnitTest" />
+            <layer Id="7fc879a1-82a2-48f7-80ad-faed64331ca3" name="MVC.IntegrationTest" />
+            <layer Id="6235d068-b61b-4ef4-819f-394345c7ebc4" name="&#xD;&#xA;&#xD;&#xA;PHP" />
+            <layer Id="c554cfd5-a710-4683-8070-f5e3c0cda371" name="PHP.IntegrationTest1" />
+            <layer Id="f3681dad-bc25-4d6c-b0c8-2259f9837d85" name="PHP.UnitTest1" />
+          </childLayers>
+        </layer>
+        <layer Id="b45aba51-e12a-4bf5-88ab-ce9363eb4a46" name="Desktop">
+          <childLayers>
+            <layer Id="2ff2e1c3-3658-43f0-9f5e-d331636d0758" name="&#xD;&#xA;&#xD;&#xA;WP" />
+            <layer Id="7aaafa14-05a5-4a92-90b5-9ba3bac01ab0" name="WP.CodedUITest" />
+            <layer Id="1818e1b6-ea61-4873-bcd4-b941375ea4d8" name="&#xD;&#xA;&#xD;&#xA;Java" />
+            <layer Id="3157f10a-f8a6-449b-8a4e-4e763b7bdcc1" name="Java.CodedUITest1" />
+            <layer Id="32f6f716-d1de-482f-a874-5324f9e887a6" name="Java.UnitTest" />
+            <layer Id="afa12fda-1f64-48d3-82db-8b65c09a347b" name="WP.UnitTest" />
+          </childLayers>
+        </layer>
+        <layer Id="83c10e09-0534-416a-b092-58a705cbbcc1" name="Mobile">
+          <childLayers>
+            <layer Id="f40a11c3-ea5d-4eb3-bcfd-08b662092255" name="WP.UnitTest1" />
+            <layer Id="af6f1ec0-e919-453e-a248-b300ca4f77fb" name="WP.IntegrationTest1" />
+            <layer Id="ccd17241-346d-4622-a853-a8a53495cb99" name="&#xD;&#xA;&#xD;&#xA;Windows Phone" />
+            <layer Id="585e866b-da6e-467b-adc8-abdaa2286854" name="iOS.UnitTest11" />
+            <layer Id="261640f1-1752-4c57-99e7-874f64808fd2" name="iOS.IntegrationTest11" />
+            <layer Id="d5f1bf01-8685-4af5-847c-bfbfe64ee88c" name="&#xD;&#xA;&#xD;&#xA;iOS" />
+            <layer Id="d8c6cf9c-f718-41c7-89f1-7ffb0fd1979c" name="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Xamarian" />
+            <layer Id="14c8fa13-47cf-4c69-a61c-ff2e9e50c5bc" name="Xamarian.IntegrationTest111" />
+            <layer Id="ed709b01-7dd6-4bd5-a491-a4cde167f290" name="Xamarian.UnitTest111" />
+            <layer Id="1b2ad7d5-2a54-4945-8238-bbb9e3de1dfd" name="Android.IntegrationTest11" />
+            <layer Id="ef875c83-f9d2-4729-afce-ada42e16d0fa" name="Android.UnitTest11" />
+            <layer Id="b61786ad-cc02-497e-86de-a33514249dcf" name="&#xD;&#xA;&#xD;&#xA;Android" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="e7c82fd6-3cf9-40cd-a42b-9528185424b1" name="Services Layer">
+      <childLayers>
+        <layer Id="e2836a31-819f-4e6b-92ac-7b9e6e5df229" name="Services.UnitTest" />
+        <layer Id="f02c7752-8950-4536-91d5-92bd8320ad2e" name="Services.IntegrationTest" />
+        <layer Id="59f5db16-d746-4303-84ea-d7b175b82163" name="Services" />
+      </childLayers>
+    </layer>
+    <layer Id="c9435f17-3b62-4bec-adb7-2e10a02b6eb3" name="Bussiness Layer">
+      <childLayers>
+        <layer Id="1dd446e3-29ff-4be7-bb22-5f9aa1c97c94" name="Domain" />
+        <layer Id="81f8cb01-bfa4-4c3d-9041-4a15d26abdab" name="Domain.IntegrationTest" />
+        <layer Id="53a336b7-fa3f-4c1b-aafc-b5e9e554ead9" name="Domain.UnitTest" />
+      </childLayers>
+    </layer>
+    <layer Id="70ed5fab-5a36-4ed6-beaa-e19707f62618" name="Data Layer">
+      <childLayers>
+        <layer Id="e0919abd-7c13-41dd-8a0b-81e584d49e71" name="DB&#xD;&#xA;" />
+        <layer Id="b56804e4-f94e-4ab4-8480-5496250c2ba7" name="Test.DB" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

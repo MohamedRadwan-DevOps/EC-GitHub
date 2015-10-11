@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0-*",
+    "description": "Codeflyers.EC.Domain Class Library",
+    "authors": [ "mradwan" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "System.Collections": "4.0.10-beta-23019",
+        "System.Linq": "4.0.0-beta-23019",
+        "System.Threading": "4.0.10-beta-23019",
+        "System.Runtime": "4.0.10-beta-23019",
+        "Microsoft.CSharp": "4.0.0-beta-23019",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta5",
+        "EntityFramework": "6.1.3",
+        "FluentValidation": "5.6.2",
+        "Unofficial.System.ComponentModel.DataAnnotations": "1.0.0"
+    },
+
+    "frameworks": {
+      "dnx451": {
+        "dependencies": {
+          "EntityFramework": "6.1.3"
+        }
+      }
+    }
+}

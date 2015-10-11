@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Codeflyers.EC.Domain.Entities.Product>
+
+@{
+    ViewBag.Title = "Admin: All Product";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>All Products</h1>
+
+
+<table class="Grid">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th class="NumericCol">Price</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@Html.ActionLink(item.Title, "Edit", new { item.ProductId })</td>
+            <td class="NumericCol">@item.Price.ToString("c")</td>
+            <td>
+                @using (Html.BeginForm("Delete", "Admin")) {
+                    @Html.Hidden("ProductId", item.ProductId)
+                    <input type="submit" value="Delete"/>
+                }
+            </td>
+        </tr>
+    }
+</table>
+<p>@Html.ActionLink("Add a new Product", "Create")</p>
+
+
+
+
+@*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageMimeType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageMimeType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BookId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BookId })
+        </td>
+    </tr>
+}
+
+</table>*@

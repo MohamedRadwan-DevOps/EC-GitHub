@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-*",
+  "description": "Codeflyers.EC.Services.xUTest Class Library",
+  "authors": [ "mradwan" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Collections": "4.0.10-beta-23019",
+    "System.Linq": "4.0.0-beta-23019",
+    "System.Threading": "4.0.10-beta-23019",
+    "System.Runtime": "4.0.10-beta-23019",
+    "Microsoft.CSharp": "4.0.0-beta-23019",
+    "Codeflyers.EC.Domain": "1.0.0-*",
+    "Moq": "4.2.1507.118",
+    "Codeflyers.EC.Services": "1.0.0-*",
+    "xunit": "2.1.0-beta4-build3109",
+    "xunit.runner.dnx": "2.1.0-beta4-build134",
+    "xunit.runner.console": "2.1.0"
+  },
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+
+  "frameworks" : {
+    "dnx451": { "dependencies": { }}
+  }
+}

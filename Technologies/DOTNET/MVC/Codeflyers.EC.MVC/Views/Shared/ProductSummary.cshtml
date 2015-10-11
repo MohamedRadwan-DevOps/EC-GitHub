@@ -1,0 +1,33 @@
+﻿@using Codeflyers.EC.MVC.HtmlHelpers
+@model Codeflyers.EC.Domain.Entities.Product
+
+<div class="product">
+    <div class="product-image">
+        <a href="#"><img src="@Url.Action("GetImage", "Product", new {Model.ProductId})" width="120" height="120" alt="@Model.Title"></a>
+    </div>
+    <div class="inner">
+        <div class="f-left">
+            <div class="name">
+                <a href="#">@Html.Truncate(Model.Title, 20)</a>
+            </div>
+            <div class="price">
+                <span class="price-new">$588.33</span><span class="price-old">@Model.Price</span>
+            </div>
+            <div class="description">@Html.Truncate(Model.Description, 80)</div>
+        </div>
+        <div class="cart-button">
+            <a href="#" class="button details"><i class="icon-info-sign "></i> </a>
+            <div class="cart">
+                @using (Html.BeginForm("AddToCart", "Cart"))
+                {
+                    @Html.HiddenFor(x => x.ProductId)
+                    <input type="hidden" name="returnUrl" value="@Request.Url.ToString()" />
+                    <input type="submit" value="+ Add to cart" />
+                }
+            </div>
+            <span class="clear"></span>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+

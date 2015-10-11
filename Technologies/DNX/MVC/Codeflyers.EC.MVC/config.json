@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Codeflyers.EC.MVC"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Codeflyers.EC.MVC-6b46a96d-bd9a-4245-80db-88c995477aa7;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

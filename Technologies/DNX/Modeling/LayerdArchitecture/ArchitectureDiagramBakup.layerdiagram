@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ed2301b-f138-4a8d-9583-43ce1f32f22e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="59f5db16-d746-4303-84ea-d7b175b82163" name="Commentor.Calculator.Services" />
+    <layer Id="1dd446e3-29ff-4be7-bb22-5f9aa1c97c94" name="Commentor.Calculator.Domain" />
+    <layer Id="e0919abd-7c13-41dd-8a0b-81e584d49e71" name="Commentor.Calculator.DB&#xD;&#xA;" />
+    <layer Id="53a336b7-fa3f-4c1b-aafc-b5e9e554ead9" name="Commentor.Calculator.Domain.UnitTest" />
+    <layer Id="f02c7752-8950-4536-91d5-92bd8320ad2e" name="Commentor.Calculator.Services.IntegrationTest" />
+    <layer Id="e2836a31-819f-4e6b-92ac-7b9e6e5df229" name="Commentor.Calculator.Services.UnitTest" />
+    <layer Id="81f8cb01-bfa4-4c3d-9041-4a15d26abdab" name="Commentor.Calculator.Domain.IntegrationTest" />
+    <layer Id="7498adc8-3d23-43a8-83df-f5ee5634d23e" name="Presentation Layer">
+      <childLayers>
+        <layer Id="83c10e09-0534-416a-b092-58a705cbbcc1" name="Mobile" />
+        <layer Id="d39ede5a-87ab-4c81-a0c1-0185c7b86f8b" name="Web">
+          <childLayers>
+            <layer Id="cf29c53d-472f-4a03-a454-72e1203dab66" name="MVC.Client" />
+            <layer Id="7dbbc9d3-efd8-4339-8d43-1b376da5cf98" name="MVC.Client.UnitTest" />
+            <layer Id="7fc879a1-82a2-48f7-80ad-faed64331ca3" name="MVC.Client.IntegrationTest" />
+          </childLayers>
+        </layer>
+        <layer Id="b45aba51-e12a-4bf5-88ab-ce9363eb4a46" name="Windows">
+          <childLayers>
+            <layer Id="2ff2e1c3-3658-43f0-9f5e-d331636d0758" name="WinForm.Client" />
+            <layer Id="d4a666f2-1f95-4e24-8083-44195818dc1d" name="WPF.Client" />
+            <layer Id="5906f2c2-05c0-4d7c-a2ac-f7984981ebdc" name="Win8App.Client" />
+          </childLayers>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="36028e5f-e674-4129-9acc-3afe46e33449" name="MVC Client">
+          <ArtifactNode Label="MVC Client" Category="CodeSchema_Project" Id="(Assembly=../../1-Layers/1.1%2520Presentation/Web/MVC%2520Client)">
+            <Category Ref="SolutionFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Commentor.Calculator.MVC.Client.UnitTest)" Label="Commentor.Calculator.MVC.Client.UnitTest.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=Commentor.Calculator.MVC.Client.IntegrationTest)" Label="Commentor.Calculator.MVC.Client.IntegrationTest.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=Commentor.Calculator.MVC.Client)" Label="Commentor.Calculator.MVC.Client.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="e7c82fd6-3cf9-40cd-a42b-9528185424b1" name="Layer2" />
+    <layer Id="ae1abba6-4b23-4e0e-ada6-bed66d00f640" name="Layer4" />
+    <layer Id="24f654b1-bac6-4710-8c03-299e112451f7" name="Layer5" />
+    <layer Id="fa58b953-f67e-4633-a5fe-3836ecd6bef7" name="Layer6" />
+    <layer Id="c9435f17-3b62-4bec-adb7-2e10a02b6eb3" name="Layer7" />
+    <layer Id="70ed5fab-5a36-4ed6-beaa-e19707f62618" name="Layer8" />
+  </layers>
+</layerModel>

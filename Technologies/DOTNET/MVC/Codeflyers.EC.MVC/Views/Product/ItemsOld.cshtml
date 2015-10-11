@@ -1,0 +1,53 @@
+﻿@using Codeflyers.EC.MVC.HtmlHelpers
+@model Codeflyers.EC.MVC.Models.ProductItemsViewModel
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Feature Products</h2>
+@foreach (var p in Model.FeaturedProducts)
+{
+    Html.RenderPartial("ProductSummary", p);
+}
+
+<div class="pager">
+    @Html.PageLinks(Model.FeaturedProductsPagingInfo, x => Url.Action("Items", new { Page = x, category = Model.CurrentCategory }))
+</div>
+
+<h2>New Arrival Products</h2>
+@foreach (var p in Model.NewArrivalProducts)
+{
+    Html.RenderPartial("ProductSummary", p);
+}
+
+<div class="pager">
+    @Html.PageLinks(Model.NewArrivalProductsPagingInfo, x => Url.Action("Items", new { Page = x, category = Model.CurrentCategory }))
+</div>
+
+<h2>Random Products</h2>
+@foreach (var p in Model.RandomProducts)
+{
+    Html.RenderPartial("ProductSummary", p);
+}
+<div class="pager">
+    @Html.PageLinks(Model.RandomProductsPagingInfo, x => Url.Action("Items", new { Page = x, category = Model.CurrentCategory }))
+</div>
+
+<h2>BestSeller Products</h2>
+@foreach (var p in Model.BestSellerProducts)
+{
+    Html.RenderPartial("ProductSummary", p);
+}
+<div class="pager">
+    @Html.PageLinks(Model.BestSellerProductsPagingInfo, x => Url.Action("Items", new { Page = x, category = Model.CurrentCategory }))
+</div>
+
+<h2>Hot Sale Products</h2>
+@foreach (var p in Model.HotSaleProducts)
+{
+    Html.RenderPartial("ProductSummary", p);
+}
+<div class="pager">
+    @Html.PageLinks(Model.HotSaleProductsPagingInfo, x => Url.Action("Items", new { Page = x, category = Model.CurrentCategory }))
+</div>

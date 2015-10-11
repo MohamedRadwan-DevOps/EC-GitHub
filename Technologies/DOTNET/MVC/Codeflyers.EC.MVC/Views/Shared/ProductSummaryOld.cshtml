@@ -1,0 +1,26 @@
+﻿@*@model Codeflyers.EC.MVC.Models.ProductSummaryViewModel*@
+@model Codeflyers.EC.Domain.Entities.Product
+<div class="item">
+
+    @*@if (Model.Product.ImageData != null)*@
+    @if (Model.ImageData != null)
+    {
+        <div style="float:left;margin-right:20px">
+            <img width="75" height="75" src="@Url.Action("GetImage", "Product",
+                new { Model.ProductId })" />
+        </div>
+    }
+
+    <h3>@Model.Title</h3>
+    @Model.Description
+
+    @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        @Html.HiddenFor(x => x.ProductId)
+        <input type="hidden" name="returnUrl" value="@Request.Url.ToString()"/>
+        <input type="submit" value="+ Add to cart" />
+    }
+    @Request.Url.ToString()
+    <h4>@Model.Price.ToString("c")</h4>
+    <h1>@Request.Url.ToString()</h1>
+</div>

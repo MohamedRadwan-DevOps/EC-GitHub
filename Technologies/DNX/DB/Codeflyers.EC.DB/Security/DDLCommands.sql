@@ -1,0 +1,1 @@
+﻿EXEC sp_changedbowner 'ECLogin';

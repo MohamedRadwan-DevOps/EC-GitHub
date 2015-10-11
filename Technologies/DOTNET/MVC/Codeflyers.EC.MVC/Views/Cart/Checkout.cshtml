@@ -1,0 +1,31 @@
+﻿@model Codeflyers.EC.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "Product" +
+                    " Store: Check out";
+}
+
+<h2>Check out now</h2>
+Please enter your shipping details
+
+@using (Html.BeginForm("Checkout", "Cart"))
+{
+    @Html.ValidationSummary()
+    <div>Name: @Html.EditorFor(x => x.Name)</div>
+    <div>Address: @Html.EditorFor(x => x.Address)</div>
+    <div>Country: @Html.EditorFor(x => x.Country)</div>
+    <div>State: @Html.EditorFor(x => x.State)</div>
+    <div>City: @Html.EditorFor(x => x.City)</div>
+    <div>Postal Code: @Html.EditorFor(x => x.PostalCode)</div>
+    
+
+    <h3>Options</h3>
+    <label>
+        @Html.EditorFor(x => x.GiftWrap)
+        Gift wrap this order
+    </label>
+        
+    <p align="center">
+        <input class="actionButtons" type="submit" value="Complete order" />
+    </p>
+}

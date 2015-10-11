@@ -1,0 +1,24 @@
+﻿@using Codeflyers.EC.MVC.HtmlHelpers
+@using Codeflyers.EC.MVC.Models
+@model Codeflyers.EC.MVC.Models.ProductListViewModel
+
+
+@{
+    ViewBag.Title = "Products";
+
+}
+wi
+<h2>Products</h2>
+<ul class="row">
+    @foreach (var p in Model.Products)
+    {
+        @:<li class="first-in-line span3">
+        Html.RenderPartial("ProductSummary", p);
+        @:</li>
+
+    }
+
+</ul>
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { Page = x, category = Model.CurrentCategory }))
+</div>

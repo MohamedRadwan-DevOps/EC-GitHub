@@ -1,0 +1,16 @@
+﻿@model Codeflyers.EC.MVC.Models.ProductListViewModel
+
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+@foreach (var p in Model.Products)
+{
+    await Html.RenderPartialAsync("ProductSummary",p);
+}
+
+<div class="pager">
+    @*@Html.(Model.PagingInfo, x => Url.Action("List", new { Page = x, category=Model.CurrentCategory }))*@
+</div>

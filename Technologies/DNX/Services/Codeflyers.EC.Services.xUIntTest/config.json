@@ -1,0 +1,7 @@
+﻿{
+	"Data": {
+		"DefaultConnection": {
+			"ConnectionString": "Server=.;Database=Codeflyers.EC.DB;Trusted_Connection=True;"
+		}
+	}
+}

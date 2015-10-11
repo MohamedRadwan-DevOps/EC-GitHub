@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/NewSite.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="main" class="main-container">
+        <div id="header">
+            <div id="project-title" class="project-title"> Codeflyers </div>
+            <div id="company-logo" class="logo-marvel"><img src="~/Content/Images/Marvel-Logo-White.png" width="100" /> </div>
+            <div id="store-logo" class="logo-book"><img src="~/Content/Images/books_transparent.gif" width="100" /> </div>
+            @{ Html.RenderAction("Summary", "Cart"); }
+            <div class="title"></div>
+        </div>
+        <div id="body" class="body-inner">
+            <div id="categories">
+                @{ Html.RenderAction("Menu", "Nav"); }
+            </div>
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer" class="footer-bg"> Codeflyers E-Commerce Shope </div>
+    </div>
+</body>
+
+</html>
