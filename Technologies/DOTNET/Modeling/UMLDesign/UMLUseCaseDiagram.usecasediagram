@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ffa28caf-b859-4925-be80-e87ef6f40e1e" name="UMLUseCaseDiagram1" linkedPackageId="e29c9ec2-6a84-47d8-92a0-fce3ce8b95ac" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="774fed76-159e-4bf4-a7d4-b2c771cb2609">
+      <profileInstance Id="f45ec57c-3f7e-4272-91a2-4703007e04fc" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f078725f-7f9a-4171-bffa-a7c4cedb2f7b">
+      <profileInstance Id="1bb0d689-2af9-4436-94af-57122e82d631" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="abf45263-928a-4825-acda-9077ebc6b4c7" name="Visitor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="835e3b89-28ea-4928-9d0b-6486ba38398b" />
+        <targetEnds>
+          <association Id="05a1537f-55fc-4bf7-ba85-dda4db86f331" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="Search products buy category/sub category" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17883bbb-65c1-4f6d-9bb2-e2d2c6010a4d" LastKnownName="Search products buy category/sub category" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1d8174f-6612-4b85-9432-951bc45e89d5" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5666fb16-51e2-4643-808a-8c1887fbfaf6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8477bd46-8869-4423-8e94-d97559947e30" name="Search products buy category/sub category" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a901373b-9489-499a-bfdc-53618ba806aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="088ed2d5-a92d-4de1-8d56-5ea93d4e1aa5" />
+          </association>
+          <association Id="38f10ebd-4278-4ebd-bedf-eae57ec56575" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="View shopping cart" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b0bedf5e-cf65-443a-bc5c-4ea391885a32" LastKnownName="View shopping cart" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0b4abf6-1feb-44b9-ab96-3db88bcf6dcc" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54e281cd-d985-42a8-a617-d0b45843d596" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67e66e2a-592b-4f41-93ea-b9dbe66ec55d" name="View shopping cart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="763b6d56-7302-4e76-afea-7da0ab10bf7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="07df6bad-784e-43ba-bf2b-bdfcdaba99db" />
+          </association>
+          <association Id="8909477a-3933-4073-9e15-d6d6dcdf9478" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="Create order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="adf1ca81-4558-461c-924f-dc6386bf1948" LastKnownName="Create order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="217060e6-5441-41d2-8b5b-37ffbf94980f" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="46604833-ee8e-4e9a-8701-40a6ebfa1d9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfbf5055-807e-4ec8-9c3a-a3848e40dd14" name="Create order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2701dd67-4bca-4700-8aa0-d14c308cc6e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="52e87ca8-2554-4873-ad0e-0e423268489b" />
+          </association>
+          <association Id="72bf404a-cfd4-44b3-a9f8-b6ae58b90997" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="View product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7977863a-2572-4db4-825e-9e4f6491a437" LastKnownName="View product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e22fe836-6d06-41f7-b326-0db0bc206da1" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac11ffc9-90eb-4c7f-a6b7-991e96d24c00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67af9dca-231b-410d-b853-06236cbdca9a" name="View product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="07a86270-75eb-4a24-a7c0-e34059aef9e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dedb031c-36aa-4e6f-8944-1980d10cc325" />
+          </association>
+          <association Id="04d4408d-2c49-41be-b155-0d9cc69e8c05" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="View home page with all included sliders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4065dc5c-6762-4603-9e62-20b429c0b9c8" LastKnownName="View home page with all included sliders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73dec7e4-4e86-468d-bf27-51005a150cd4" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf4ba6e9-93ad-4d30-9526-1c33299987d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c857d26b-3cf6-4530-843d-c981259d5449" name="View home page with all included sliders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e74b350c-8574-4126-b980-2b7c0749c5aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="356fbf3b-0124-40c5-b664-55510d8174c0" />
+          </association>
+          <association Id="ff370447-d7f8-4de1-bd7e-aa16b25a3fd4" isDerived="false" sourceEndRoleName="Visitor" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="24252ebb-0316-4396-bfa9-b836af71b20c" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ffa1c98-12a1-4ef6-8cfc-7b430b54ca4d" name="Visitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a82ae48f-293f-4a9c-834e-29f507f82a32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d447cfb-8e5f-4c4b-8e45-9633d1dd6b06" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92060e98-aa08-4223-b848-4d7f2a9455d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d599053a-eeda-4a4c-b9b6-a0276e341236" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f9ff717f-9f25-4b11-831e-a73266de6f84" name="Vendor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7ca5a93-d875-41cc-97f4-6248dc46c2e9" />
+        <targetEnds>
+          <association Id="5feb42b6-3007-4588-ac68-62413dd3291d" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="851c2fb8-ca6a-46a6-a3f5-931806060c8e" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a88127bf-1a2d-4a25-ba8b-cab06edd7c97" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a459af80-1253-4f8e-82c2-bfde50c65e4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f7977e5-54ba-4369-ac7d-e2b7a66eb332" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a42a5ba8-5bd1-4385-a366-9298dac3c0ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e1538e22-e46b-49fa-b1a0-d4b478b98862" />
+          </association>
+          <association Id="afa245a8-79c3-4132-9b41-b0e05c8ca282" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="List special offers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="227008c2-251e-4946-b770-3822ced0ccac" LastKnownName="List special offers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="690f43e2-42b5-4e1a-a10a-ed4421bbfdd5" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8e034033-d316-4ecb-88b5-f1ed1526066d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14b1aaa5-28f2-4f6e-9ffb-fe4012fa9acf" name="List special offers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e66d62bf-66ad-49c2-a548-c58260ef145f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb1454ea-ea9b-4737-8d17-489c3043eed6" />
+          </association>
+          <association Id="f41c7aff-5fe0-443d-a000-638d6bb78c24" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="Add special offer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b3d116e9-c31b-4c7f-9819-28134431b5dd" LastKnownName="Add special offer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e93dea7d-700a-414f-b1db-ea29dcc6e488" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bef44dce-4f76-4cc0-b8d5-445bdab64399" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94e4fb57-a6ae-402e-b4d7-86cd66bb77b2" name="Add special offer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a888ff19-d911-4b7e-808d-fa266a0041e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f6e248d-90f7-465e-ad86-b00c4449c7b6" />
+          </association>
+          <association Id="23cb0520-e719-4fa3-a785-46988bb3757f" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="update special offer" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c34d9529-d779-489d-a93b-79c4d2650db5" LastKnownName="update special offer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ccea504-02f5-4369-85d9-838b983439c6" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44be3fee-6b85-4a32-8422-10d17e76acd3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4adc5ab3-341d-41c7-bf4e-7eabf5463d29" name="update special offer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c116a578-c8ab-4c55-8e69-3b6068e25822" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d712720-4ff1-4576-82fb-ceb3618c287e" />
+          </association>
+          <association Id="eb035bf3-922d-4f25-9e2c-eb55570591bd" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="List all products" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cb8fee66-38fd-4172-a622-f1d85df6cd29" LastKnownName="List all products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e076e9d-f8a3-4eaf-8919-aa3d7e56e035" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="070b1a36-2418-4bf8-b328-d2e29e6e3395" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0ffd5d4-8641-4846-881d-a3a3c5c6cf05" name="List all products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2d55e9f-f942-405a-a602-5438a8f15bf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="13e3ba13-9b87-4cef-afe6-9e16cf30be66" />
+          </association>
+          <association Id="2572fe7f-1df4-4f25-9b1b-44c96a311493" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="Update product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15eb2bc3-c7de-467a-aa3e-3608e3bd99ff" LastKnownName="Update product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b8003d0-e839-41af-8ebf-3f2a13c2a1b2" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="03866d81-501f-4309-b560-4fae55b885ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05572aa4-0b61-4d2e-a568-a53bc681816c" name="Update product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3bd429f-af60-4866-ae62-64106a75a7b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dfb35830-f5b9-4042-9809-382156278e4b" />
+          </association>
+          <association Id="931655b5-d9a3-4acb-a168-2b9481d8d611" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="Add product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ccece42a-2fd2-4b53-b56b-6707eb1be93c" LastKnownName="Add product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="45c10f78-5628-4758-ae1e-78b5aeea44b5" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c9546fde-13cd-40da-a049-3904b2878ccd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68f7ccd2-3f5e-43ba-9a93-31de0b462870" name="Add product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="722dd7f7-e7d0-4f42-837f-bf0cb056fb00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="625ce237-7b12-47f8-89d3-4e2d2cd7dfc2" />
+          </association>
+          <association Id="3d5bfbb4-5911-4294-a395-4d957ccdff69" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="Update completed order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c18cd022-32ee-4096-8f1e-d958ff0171fb" LastKnownName="Update completed order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02c2e1a6-7709-4204-8621-4fb5eade6dab" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9a1f2e5-fbfb-4319-b5a5-d109747d6e56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec947f2a-1155-4dde-baf7-71bab8db96bb" name="Update completed order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba1e31b9-55df-49a9-8c2e-7cee35355d9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="180e0e7a-20b7-48ca-9d38-e2bf96899c19" />
+          </association>
+          <association Id="fb9f7d2f-2e42-4c9b-8921-412503065670" isDerived="false" sourceEndRoleName="Vendor" targetEndRoleName="List all orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b847c6e9-fab1-4466-b995-c907b08ff83b" LastKnownName="List all orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4aa810dc-e960-47c2-8fa2-af43de010a76" name="Vendor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6c98df8c-0c22-4f7a-bf87-9d37b3fb677e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b2c547f-1063-47b6-9a21-da72b8432e0b" name="List all orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bad49eba-7250-4220-a0a3-69cf0bf64146" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00cf653d-2552-412b-ae1b-113c5c799559" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="77591e87-4b0e-429e-ad58-ff3640f29266" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a1cf7f5-1835-454b-a078-7e85bf4847bd" />
+        <targetEnds>
+          <association Id="4fa29ac1-ec00-4335-bf6e-6b81336ee4ee" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="851c2fb8-ca6a-46a6-a3f5-931806060c8e" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="982d976b-8019-4b2b-8418-9f135d1834d3" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e8304960-6aab-4be9-b3a8-6d5a644321fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da214530-ffd6-4eaf-ab9c-646173a1d358" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13bcb87c-2458-4f2d-b0f6-664c12815e33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40f19400-01ec-48f5-aeff-00e984e07110" />
+          </association>
+          <association Id="ef49e4ce-3016-49d4-a396-8cc3b1e75f39" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Display / Hide Special offers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a8cdf8e1-4ce5-4024-b890-c5baf150a158" LastKnownName="Display / Hide Special offers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a818ed2-7a6f-41e5-b415-2ba00a9b747a" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c99f6d79-5d0f-40ac-bc32-a7a215141b65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1dfc374f-e171-4f2d-8b1d-d3326f154db0" name="Display / Hide Special offers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ff6ed321-4c32-42a0-8f94-f4f6ba6da9a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="49f1f095-9fd4-4747-bbcb-282a918a25f7" />
+          </association>
+          <association Id="a2d7852b-dac6-423c-b5a8-3011b6927cd8" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="List all orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b847c6e9-fab1-4466-b995-c907b08ff83b" LastKnownName="List all orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d28480d1-c191-467e-8af0-6babb52d629f" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="477cfc6a-a95e-42d3-ab34-a59adf92dd25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c25aaeb0-a761-4357-b6c2-7c79669e424c" name="List all orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f19d7c9e-625c-46ba-9091-5c1bc54a0dbf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d6a92b0f-bfce-489b-abae-1b7ddd05e15e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="851c2fb8-ca6a-46a6-a3f5-931806060c8e" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="289cbc1e-96fc-44b2-97ab-3dcf11e0fba7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a8cdf8e1-4ce5-4024-b890-c5baf150a158" name="Display / Hide Special offers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ba654b2-859a-445d-a79f-4af739e3934b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b847c6e9-fab1-4466-b995-c907b08ff83b" name="List all orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a19b2593-0e6f-44d3-a4b2-e275a2fa3e43" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="227008c2-251e-4946-b770-3822ced0ccac" name="List special offers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59f364c3-211a-4532-a8bb-102da8aa5485" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b3d116e9-c31b-4c7f-9819-28134431b5dd" name="Add special offer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f1a3bac-8a37-46e1-acb6-40bd8cf0ee52" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c34d9529-d779-489d-a93b-79c4d2650db5" name="update special offer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a0a6676-d878-4ad4-9408-366cda14cf25" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c18cd022-32ee-4096-8f1e-d958ff0171fb" name="Update completed order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="81fb4135-3b0c-4486-b5e7-9fb7f79af520" />
+        <suppliersInternal>
+          <dependency Id="18408ac4-7bd7-4977-bc8a-78e34d00cfe4">
+            <useCaseMoniker Id="9035b1e8-6b5b-40c6-a35e-0ec2d92c0957" LastKnownName="Place order" />
+            <elementDefinition Id="54846f02-1916-427c-b10c-c0f53f826525" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ccece42a-2fd2-4b53-b56b-6707eb1be93c" name="Add product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="05b5a1ac-ce11-422b-a6bc-dbeccdf531d0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15eb2bc3-c7de-467a-aa3e-3608e3bd99ff" name="Update product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12e958d8-812f-448b-aa04-70a7da8152d0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cb8fee66-38fd-4172-a622-f1d85df6cd29" name="List all products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b2d8c94-b3e6-496a-965c-6db2e2fa4207" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="17883bbb-65c1-4f6d-9bb2-e2d2c6010a4d" name="Search products buy category/sub category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67c73c9c-09ca-4d6d-b37c-3baa88827b4d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b0bedf5e-cf65-443a-bc5c-4ea391885a32" name="View shopping cart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3065db2-c3ba-4fe1-b405-80bfc92c7615" />
+        <additions>
+          <include Id="53a675b2-8b59-44a3-8d23-3df3039ab289">
+            <useCaseMoniker Id="c76b3376-e0f6-41ed-80f4-4a1c8f2111a9" LastKnownName="Remove product from shopping cart" />
+            <elementDefinition Id="2c6653af-a2cf-442c-806d-8930de9ac53d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c76b3376-e0f6-41ed-80f4-4a1c8f2111a9" name="Remove product from shopping cart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e300021c-8162-48bf-b8a2-ae73fbc5c39c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2f2ceed9-2b23-4083-a2ed-23f030f2ca97" name="Add product to   shopping cart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10eea0b6-a704-4dac-8285-888e6ccc336f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="adf1ca81-4558-461c-924f-dc6386bf1948" name="Create order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c23540f7-93f0-4455-93af-ab69b0c05080" />
+        <additions>
+          <include Id="15393067-9d99-4f39-8d86-7ff1205e6e3e">
+            <useCaseMoniker Id="c9e8c6bd-6053-43a8-9a97-32ab9769583a" LastKnownName="Add delivery address" />
+            <elementDefinition Id="15c69d92-5e85-4e77-b8fd-bd8acca80641" />
+          </include>
+          <include Id="a69bdcca-3d99-48f1-a21c-a119ebe39015">
+            <useCaseMoniker Id="82cc1097-74a1-4ad7-b77c-6fd1e73a0215" LastKnownName="Review order" />
+            <elementDefinition Id="61901816-9d51-4c50-aa20-102c5f38535c" />
+          </include>
+          <include Id="0b137dff-a2a2-47bd-92ab-a571bca40fe1">
+            <useCaseMoniker Id="9035b1e8-6b5b-40c6-a35e-0ec2d92c0957" LastKnownName="Place order" />
+            <elementDefinition Id="c7905dd8-5cf6-4849-85cf-db0c143b307f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c9e8c6bd-6053-43a8-9a97-32ab9769583a" name="Add delivery address" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92660222-1fb2-44e3-b0ca-1cdb07d103ef" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="82cc1097-74a1-4ad7-b77c-6fd1e73a0215" name="Review order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f82cdee4-5c29-4c22-b3e2-18cf84f79ff8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9035b1e8-6b5b-40c6-a35e-0ec2d92c0957" name="Place order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d93ff54-66ec-4eb2-9939-068b13a4e3d6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7977863a-2572-4db4-825e-9e4f6491a437" name="View product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e18d360a-0714-4110-ac59-ff341c2ae3af" />
+        <additions>
+          <include Id="b7642749-5291-4d59-b693-07b8aff7d92f">
+            <useCaseMoniker Id="2f2ceed9-2b23-4083-a2ed-23f030f2ca97" LastKnownName="Add product to   shopping cart" />
+            <elementDefinition Id="088f4ef1-787d-496f-b7ea-19626c0be457" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4065dc5c-6762-4603-9e62-20b429c0b9c8" name="View home page with all included sliders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cbcd17a9-4e35-48cf-a551-4b131aeeb431" />
+        <additions>
+          <include Id="913598ef-855d-43e9-9c19-183b227efc69">
+            <useCaseMoniker Id="c9e5a978-23c8-4bff-900c-39587a20dc0b" LastKnownName="View special offer slider" />
+            <elementDefinition Id="5a45c3d2-e430-40c0-84d7-edaca7ff3c17" />
+          </include>
+          <include Id="cb27fad5-1e03-4b74-889a-53ffa91e2de2">
+            <useCaseMoniker Id="ee9387ff-0762-45e5-9863-376a7da26ace" LastKnownName="View top new    arrival slider  " />
+            <elementDefinition Id="6e526319-add6-4ffd-a731-41763893ed1d" />
+          </include>
+          <include Id="6ddec43a-888d-4cb0-9425-9710b5ee3536">
+            <useCaseMoniker Id="936657fa-f6ca-40ed-81f2-fa75cbce03b2" LastKnownName="View fearuted products slider" />
+            <elementDefinition Id="113878d3-9a1e-4219-a691-e25c16454cac" />
+          </include>
+          <include Id="7cb86fad-5748-45df-ab57-b429e8f51e58">
+            <useCaseMoniker Id="7af2e3a3-0bd5-44e0-bba4-866fa6710ac3" LastKnownName="View hot sale slider" />
+            <elementDefinition Id="73a22464-2815-4331-a375-7148c81a27c2" />
+          </include>
+          <include Id="e4accbe0-87c9-4a5f-90ea-786afda258d4">
+            <useCaseMoniker Id="76603d76-5204-4c04-92a6-a1ddc19dc7d5" LastKnownName=" View random  products slider" />
+            <elementDefinition Id="1fcb7085-9a9d-4e19-b650-4f93c0ebe4d0" />
+          </include>
+          <include Id="08d59541-9182-4a65-8012-a0dda3781e6e">
+            <useCaseMoniker Id="c472fb89-edc2-41e9-9df4-e0f2be4a8ad5" LastKnownName="View best selling slider" />
+            <elementDefinition Id="0715ad68-7f8d-4bdc-8784-1cb45b47e569" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24252ebb-0316-4396-bfa9-b836af71b20c" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c9e32ec-23eb-4601-87ba-738a4a0c1d5a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="78af757a-9e67-473e-a87c-270391753189" name="Member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5e9e6a3-afa0-4074-b53e-2bea5dcd0a34" />
+        <targetEnds>
+          <association Id="d34e956f-87e0-4b92-96e8-f7f6b8909a69" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="851c2fb8-ca6a-46a6-a3f5-931806060c8e" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="196a3181-d039-42bc-ba23-f40137639171" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ab1f4243-4653-4776-9a61-ea824763afcf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d95c98d-0592-4ce8-a28f-35a740381337" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0085d33c-d7ba-49e3-a68e-45075fc0b0d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab76aaab-c8a1-4012-834f-c8ecddea6b81" />
+          </association>
+          <association Id="a75053db-0b7d-4796-b9ac-2db6dc18db14" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Display placed orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0be0a2d7-9a0e-4350-9091-6fa691eec01f" LastKnownName="Display placed orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a51a2e6f-70b9-49a7-84bb-89fab61fdd8c" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df23702b-0227-4b54-a56b-178efb5f85da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="533ca6fc-97c1-4da1-944d-984689286ce8" name="Display placed orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3dfde890-59ae-493f-a530-ccfc891aa4db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="81713a6b-ccb1-4980-88ab-2794413afe89" />
+          </association>
+          <association Id="bdcba464-efc4-43ac-9386-8489f46e201a" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="View home page with all included sliders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4065dc5c-6762-4603-9e62-20b429c0b9c8" LastKnownName="View home page with all included sliders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b44f1af7-48d0-471d-ae4e-b5810587eb40" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa676a1b-a9e7-4dfe-af00-7922699f264c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56c59916-3bbb-416f-9c1d-556d8edc701c" name="View home page with all included sliders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7aa49a4-5bdd-48fb-baf9-3c713e22214b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b84f4a65-cf4b-4478-b71a-9cf7a5aa05af" />
+          </association>
+          <association Id="c296f3e3-96b2-48bf-ac40-bcc8b6df909b" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Create order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="adf1ca81-4558-461c-924f-dc6386bf1948" LastKnownName="Create order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00e44541-3f74-4add-a65a-1e9bf3676f7e" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2167eae2-ecf1-4abe-868d-be11c3861f46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="429c79dc-a637-4a30-a67c-a2bc4e65daed" name="Create order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52030eed-831c-4b2a-9c02-564faa9fde94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8949a9db-17ea-4d5b-820b-94562686edbb" />
+          </association>
+          <association Id="eef2ee17-5669-4ae2-95ba-a0b401cd8ade" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Add delivery address" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c9e8c6bd-6053-43a8-9a97-32ab9769583a" LastKnownName="Add delivery address" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b692ca64-f7b5-468d-9a96-be9efe3bf9a4" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d39f0e9c-8dfa-406c-8f43-045e63f2eae5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a69843b-1f5d-4d1a-a75e-c769f61cd79c" name="Add delivery address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f6b35d7f-5554-4f49-9400-d4bd57aee4a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0e0df10-34ca-4ca5-b6ae-740bd68c7dd4" />
+          </association>
+          <association Id="2f61b8c5-e476-4a42-8f9d-8620506409c6" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Search products buy category/sub category" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17883bbb-65c1-4f6d-9bb2-e2d2c6010a4d" LastKnownName="Search products buy category/sub category" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c56bcf07-b16c-4ac5-b6c3-47bfc94bbc2d" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fa1236c2-655d-4917-baad-4214cccd365c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="236c6efa-5c87-401e-b86e-c59c8a0b8bf6" name="Search products buy category/sub category" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1617d9d5-24a9-44e0-b41b-88e855e4956d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86d9982c-364c-4569-a2f7-f7c57bc29b6a" />
+          </association>
+          <association Id="66dd7c62-4347-4664-ba3f-5589535b02dd" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="View shopping cart" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b0bedf5e-cf65-443a-bc5c-4ea391885a32" LastKnownName="View shopping cart" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="580610ad-e7e7-47c3-ac8a-001735d89f1a" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a909f702-47f1-4c98-8b94-3ef951cf6177" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="020187b9-847b-4603-a158-2b838765ad91" name="View shopping cart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dc3fc8d0-60ab-4af7-8591-c65eaba259f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="56ccd66e-5267-4b08-825b-f45d2a15c13f" />
+          </association>
+          <association Id="b0236d12-9cd2-440f-b572-44074f9b8080" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="View product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7977863a-2572-4db4-825e-9e4f6491a437" LastKnownName="View product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74465dfa-f52b-4df0-aac8-439a65dee52f" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a67267dd-ad40-4ee2-a348-34439b8a6f8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67a6e6a2-c53f-466d-a015-14efb688acf1" name="View product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6379c0bd-37f4-4abc-bf5f-80fb12f5aabb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb50e731-8c7c-4640-a3d6-854ec68cb8b5" />
+          </association>
+          <association Id="3fb77aa0-8fed-44d8-b037-c1fc1ca1a125" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="Review order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="82cc1097-74a1-4ad7-b77c-6fd1e73a0215" LastKnownName="Review order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5be820d7-f588-4efa-8027-c37aabd7321b" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="05b4670a-3420-4642-a40a-8d04d074cc2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="977ace63-48a7-4312-97c7-e0ab317b4d1a" name="Review order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="093fe0b3-28e9-44a9-b967-c9c62ac578ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3948bc9-5ed5-4f4f-8240-5b8f538b9440" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c9e5a978-23c8-4bff-900c-39587a20dc0b" name="View special offer slider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4d71f37-7360-4dad-99b0-edba300de765" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="936657fa-f6ca-40ed-81f2-fa75cbce03b2" name="View fearuted products slider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19348d1b-eeb3-426a-a1d5-bd5b08ad4b15" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ee9387ff-0762-45e5-9863-376a7da26ace" name="View top new    arrival slider  " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a0a7ad2a-7620-445e-8f85-b764a4a45862" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7af2e3a3-0bd5-44e0-bba4-866fa6710ac3" name="View hot sale slider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34370eef-69b6-4052-b2e9-a17cf4803fa0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="76603d76-5204-4c04-92a6-a1ddc19dc7d5" name=" View random  products slider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a765005a-4d2d-49e0-9174-4c82ef2176b5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c472fb89-edc2-41e9-9df4-e0f2be4a8ad5" name="View best selling slider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e721e25-49a1-4a01-864b-3d421e924e23" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0be0a2d7-9a0e-4350-9091-6fa691eec01f" name="Display placed orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9bd2d9df-0f54-4210-9e13-c6afb9e92012" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e29c9ec2-6a84-47d8-92a0-fce3ce8b95ac" name="Modeling">
+    <elementDefinition Id="0256acd6-4384-4996-b95a-66c25d644d98" />
+  </package>
+</useCaseModelRoot>
